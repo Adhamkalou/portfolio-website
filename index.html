@@ -32,7 +32,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>who am i</h1>
-								<p>Hello my name is Adham Kalou, but you can call me Adam. Im a student at lambda and going to graduate in <span class="timer">timer placed here"</span>. I studied full stack web developer</p>
+								<p>Hello my name is Adham Kalou, but you can call me Adam. Im a student at lambda and going to graduate in <span class="timer"></span>. I studied full stack web developer</p>
 							</div>
 						</div>
 						<nav>
@@ -51,10 +51,12 @@
 
 						<!-- Intro -->
 							<article id="intro">
-								<h2 class="major">Intro</h2>
+								<h2 class="major">My Life</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
 
-								<p></p>
+								<p>I was born in Syria and i live in west virgenia, US. i love the crypto currency and maneging projects. 
+									i started working when i was 16 in tech space. my first job was support in a crypto comunity where i help people with downloading wallet and connecting them to peers.
+								then at 17 i started maneging project and organizing plans the future of the project.</p>
 								
 								<p></a></p>
 							</article>
@@ -63,14 +65,14 @@
 							<article id="work">
 								<h2 class="major">What I Do</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p></p>
+								<p>im studying full stack web developer, buisness marketing and entepunuership. i want to compine the three of them as i think they go together. resons why they can go together. i think these three g togeth for running project or being a head of a company. </p>
 							</article>
 
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">My work</h2>
 								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p></p>
+								<p>Under Constration</p>
 							</article>
 
 						<!-- Contact -->
@@ -365,5 +367,22 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			
 	</body>
 </html>
+
+<script>
+	{
+		function timeToGraduate(){
+		const t = Date.parse(new Date('May 1 2020')) - Date.parse(new Date());
+		const seconds = Math.floor( (t/1000) % 60 );
+		const minutes = Math.floor( (t/1000/60) % 60 );
+		const hours = Math.floor( (t/(1000*60*60)) % 24 );
+		const days = Math.floor( t/(1000*60*60*24) );
+		document.querySelector('span.timer').innerHTML =  `${days}:${hours}:${ minutes }:${ seconds }`;
+	}
+		setInterval(timeToGraduate, 500)
+	}
+</script>
+
+
